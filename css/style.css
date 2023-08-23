@@ -42,12 +42,10 @@ body {
   header {
     background-color: orange;
     display: block;
-    width: calc(100% - 225px);
-    height: calc(100vh - 90vh);
+    width: calc(100% - 200px);
     min-height: 75px;
     position: absolute;
-    left: 225px;
-
+    left: 200px;
   }
 
   .bottom-bar {
@@ -58,7 +56,7 @@ body {
   }
 
   aside {
-    width: 225px;
+    width: 200px;
     height: calc(100vh - 90px);
     background-color: red;
     flex-direction: column;
@@ -76,7 +74,7 @@ body {
    /*media-queries */
 
 
-   
+
 
   /* LG devices */
 
@@ -100,6 +98,23 @@ body {
 
    @media all and (max-width: 576px) {
     
+    aside {
+      width: 50px;
+      height: calc(100vh - 90px);
+      background-color: red;
+      flex-direction: column;
+
+    }
+
+    header {
+      background-color: orange;
+      display: block;
+      width: calc(100% - 50px);
+      min-height: 75px;
+      position: absolute;
+      left: 50px;
+    }
+
    }
 
 
