@@ -80,10 +80,9 @@ body {
     .container .row {
       background-color:cadetblue;
       width: 100%;
-      gap: 2%;
+      gap: 2.2%;
       flex-wrap: wrap;
       justify-content: flex-start;
-
     }
 
 
