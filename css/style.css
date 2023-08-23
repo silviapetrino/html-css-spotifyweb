@@ -74,19 +74,23 @@ body {
       background-color: violet;
       flex-direction: column;
       gap: 20px;
+      overflow-y: auto;
     }
 
     .container .row {
       background-color:cadetblue;
+      width: 100%;
+      gap: 2%;
       flex-wrap: wrap;
-      gap: 40px;
+      justify-content: flex-start;
+
     }
 
 
     .container .row .col {
       background-color: chocolate;
-      width: calc(100vw / 8);
-      height: calc(100vw / 8);
+      width: calc(100vw / 8.5);
+      height: calc(100vw / 6);
     }
 
 
@@ -113,21 +117,36 @@ body {
 
 
 
-  /* LG devices */
-
-   @media all and (max-width: 1100px) {
-
-   }
-
   /* MD devices */
 
    @media all and (max-width: 992px) {
-    
+
+    .container .row {
+      gap: 3%;
+    }
+
+    .container .row .col {
+      background-color: chocolate;
+      width: calc(100vw / 6);
+      height: calc(100vw / 4);
+    }
+
    }
 
    /* S devices */
 
    @media all and (max-width: 768px) {
+
+    .container .row {
+      gap: 5%;
+      justify-content: center;
+    }
+
+    .container .row .col {
+      background-color: chocolate;
+      width: calc(100vw / 3.4);
+      height: calc(100vw / 3);
+    }
     
    }
  
@@ -138,7 +157,6 @@ body {
     main aside {
       width: 50px;
       background-color: red;
-      flex-direction: column;
     }
 
     main header {
@@ -147,6 +165,17 @@ body {
       left: 50px;
     }
 
+    main .container {
+      width: calc(100% - 50px);
+      background-color: violet;
+    }
+
+    .container .row .col {
+      background-color: chocolate;
+      width: calc(100vw / 2.8);
+      height: calc(100vw / 2);
+    }
+    
    }
 
 
