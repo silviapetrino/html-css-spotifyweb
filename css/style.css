@@ -100,18 +100,13 @@ body {
     
     aside {
       width: 50px;
-      height: calc(100vh - 90px);
       background-color: red;
       flex-direction: column;
-
     }
 
     header {
       background-color: orange;
-      display: block;
       width: calc(100% - 50px);
-      min-height: 75px;
-      position: absolute;
       left: 50px;
     }
 
