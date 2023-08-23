@@ -38,9 +38,8 @@ body {
   /* main section */
 
   main {
-    background-color: yellow;
+    /* background-color: yellow; */
     height: calc(100vh - 90px);
-    /* justify-content: space-between; */
     position: relative;
   }
 
@@ -57,15 +56,18 @@ body {
    main aside {
      width: 200px;
      height: calc(100vh - 90px);
-     background-color: red;
      flex-direction: column;
-     justify-content: flex-end;
+     justify-content: space-between;
     }
     
     main aside .aside-bottom {
       background-color: rgb(227, 135, 135);
-      height: calc(100vh - 90vh);
       min-height: 100px;
+    }
+
+    main aside .aside-top {
+      background-color: blueviolet;
+      height: calc(100% - 100px);
     }
 
     main .container {
@@ -112,7 +114,6 @@ body {
 
 
    /*MEDIA-QUERIES*/
-
 
 
 
