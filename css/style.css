@@ -40,7 +40,7 @@ body {
   main {
     background-color: yellow;
     height: calc(100vh - 90px);
-    justify-content: space-between;
+    /* justify-content: space-between; */
     position: relative;
   }
 
@@ -54,8 +54,6 @@ body {
     left: 200px;
   }
 
-
-   
    main aside {
      width: 200px;
      height: calc(100vh - 90px);
@@ -70,6 +68,28 @@ body {
       min-height: 100px;
     }
 
+    main .container {
+      margin: 75px auto 0;
+      width: calc(100% - 200px);
+      background-color: violet;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .container .row {
+      background-color:cadetblue;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+
+    .container .row .col {
+      background-color: chocolate;
+      width: calc(100vw / 8);
+      height: calc(100vw / 8);
+    }
+
+
     /* /main section */
 
     /* bottom bar  */
@@ -81,14 +101,14 @@ body {
       position: fixed;
     }
 
-    /* bottom bar  */
+    /* /bottom bar  */
 
 
 
 
 
 
-   /*media-queries */
+   /*MEDIA-QUERIES*/
 
 
 
