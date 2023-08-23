@@ -24,6 +24,7 @@ body {
  }
   /* --colours palette-- */
 
+  /* utilities */
   .debug {
     border: 1px solid black;
   }
@@ -32,6 +33,10 @@ body {
     display: flex;
   }
 
+  /* /utilities */
+
+  /* main section */
+
   main {
     background-color: yellow;
     height: calc(100vh - 90px);
@@ -39,7 +44,8 @@ body {
     position: relative;
   }
 
-  header {
+
+  main header {
     background-color: orange;
     display: block;
     width: calc(100% - 200px);
@@ -48,26 +54,37 @@ body {
     left: 200px;
   }
 
-  .bottom-bar {
-    background-color: aqua;
-    height: 90px;
-    width: 100%;
-    position: fixed;
-  }
 
-  aside {
-    width: 200px;
-    height: calc(100vh - 90px);
-    background-color: red;
-    flex-direction: column;
-    justify-content: flex-end;
-  }
+   
+   main aside {
+     width: 200px;
+     height: calc(100vh - 90px);
+     background-color: red;
+     flex-direction: column;
+     justify-content: flex-end;
+    }
+    
+    main aside .aside-bottom {
+      background-color: rgb(227, 135, 135);
+      height: calc(100vh - 90vh);
+      min-height: 100px;
+    }
 
-   aside .aside-bottom {
-    background-color: rgb(227, 135, 135);
-    height: calc(100vh - 90vh);
-    min-height: 100px;
-   }
+    /* /main section */
+
+    /* bottom bar  */
+    
+    .bottom-bar {
+      background-color: aqua;
+      height: 90px;
+      width: 100%;
+      position: fixed;
+    }
+
+    /* bottom bar  */
+
+
+
 
 
 
@@ -98,13 +115,13 @@ body {
 
    @media all and (max-width: 576px) {
     
-    aside {
+    main aside {
       width: 50px;
       background-color: red;
       flex-direction: column;
     }
 
-    header {
+    main header {
       background-color: orange;
       width: calc(100% - 50px);
       left: 50px;
