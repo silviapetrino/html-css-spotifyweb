@@ -90,10 +90,18 @@ body {
     background-color: var(--gray);
   }
 
-  .nav-voice {
-    font-size: .9rem;
-    font-weight: 700;
+
+  .overflow {
+    overflow: auto;
   }
+
+  .b-piece {
+    content: "";
+    display: inline-block;
+    border-bottom: 1px solid rgb(122, 104, 107);
+    width: 95%;
+  }
+
 
   /* /utilities */
 
@@ -121,41 +129,33 @@ body {
      flex-direction: column;
      justify-content: space-between;
     }
+
+    main aside span {
+      vertical-align: middle;
+    }
+
+    main aside .icon {
+      vertical-align: middle;
+    }
     
     main aside .aside-bottom {
-      background-color: rgb(227, 135, 135);
       min-height: 100px;
     }
 
-    main aside .aside-top {
-      height: calc(100% - 100px);
-    }
-
-    main aside .aside-top .logo {
-      width: 170px;
-      padding: 15px;
+    main aside .aside-bottom .download {
+      padding: 3px 10px;
     }
 
    
-
-    main aside .aside-top nav ul li a {
-      display: block;
-      font-size: .8rem;
-      font-weight: 700;
-      border: 4px solid black;
-
+  
+    main aside .aside-bottom .icon {
+      width: 1.5rem;
+      padding-right: 2px;
+      font-weight: 600;
     }
 
-    main aside .aside-top nav ul li #icon {
-      width: 25px;
-      vertical-align: middle;
-      fill: var(--dark-gray);
-      margin-left: 15px;
-    }
-
-    main aside .aside-top nav ul li span {
-      vertical-align: middle;
-      padding: 5px;
+    main aside .aside-top {
+     height: calc(100% - 100px);
     }
 
     main aside .aside-top nav.menu {
@@ -164,17 +164,44 @@ body {
 
     main aside .aside-top nav.playlist {
       padding: 15px 20px;
+      height: 300px;
+    }
+
+    main aside .aside-top nav.playlist .nav-voice {
+      font-size: .9rem;
+      font-weight: 700;
+    }
+  
+    main aside .aside-top .logo {
+      width: 170px;
+      padding: 15px;
+    }
+
+    main aside .aside-top ul li a,
+    main aside .aside-bottom span {
+      font-size: .8rem;
+      font-weight: 700;
+    }
+
+    main aside .aside-top nav ul li a {
+      display: block;
+      border: 4px solid black;
+    }
+
+    main aside .aside-top nav ul li .icon {
+      width: 25px;
+      fill: var(--dark-gray);
+      margin-left: 15px;
+    }
+
+
+    main aside .aside-top nav ul li span {
+      padding: 5px;
     }
 
 
     main aside .aside-top nav.playlist ul {
       line-height: 20px;
-      overflow-y: auto;
-    }
-
-    main aside .aside-top nav.playlist li a {
-      font-size: .8rem;
-      font-weight: 700;
     }
 
 
@@ -187,8 +214,8 @@ body {
     }
 
     main aside .aside-top button i {
-      padding: 10px;
-      font-size: 1rem;
+      padding: 10px 12px;
+      font-size: 1.1rem;
     }
 
     main .container {
