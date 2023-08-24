@@ -11,9 +11,12 @@
 }
 
 
-body {
+body,
+button {
   font-family: 'Montserrat', sans-serif;
 }
+
+
 
  /* --colours palette-- */
  :root {
@@ -70,7 +73,6 @@ body {
   }
   
 
-
   li:hover .icon {
     fill: var(--white);
   }
@@ -92,10 +94,13 @@ body {
     color: var(--dark-gray)
   }
 
-  
 
   .bg-dark {
     background-color: var(--dark);
+  }
+
+  .bg-black {
+    background-color: var(--black);
   }
 
   .bg-gray {
@@ -124,19 +129,19 @@ body {
     position: relative;
   }
 
-
   main header {
-    width: calc(100% - 220px);
+    width: calc(100% - 200px);
     min-height: 80px;
     position: fixed;
     top: 0;
     right: 0;
-    opacity: .9;
     justify-content: flex-end;
     align-items: center;
+    background-color: var(--topbar-black);
+    opacity: .9;
   }
 
-  main header .upgrade {
+  main header button.upgrade {
     border: 1px solid var(--white);
     padding: 6px 20px;
     border-radius: 15px;
@@ -145,6 +150,10 @@ body {
     font-size: .8rem;
     font-weight: 700;
     cursor: pointer;
+  }
+
+  main button.upgrade:hover {
+    transform: scale(1.1);
   }
 
 
@@ -178,18 +187,18 @@ body {
 
     main aside .aside-bottom .icon {
       width: 1.5rem;
-      padding-right: 2px;
       font-weight: 600;
     }
 
     main aside .aside-bottom .user {
-      padding: 5px 10px;
+      padding: 5px 8px;
     }
 
     main aside .aside-bottom .user .icon {
       height: 30px;
       width: 30px;
       border-radius: 50%;
+      margin-right: 2px;
     }
 
     main aside .aside-top {
@@ -217,7 +226,8 @@ body {
     }
 
     main aside .aside-top ul li a,
-    main aside .aside-bottom span {
+    main aside .aside-bottom span,
+    main .title p {
       font-size: .8rem;
       font-weight: 700;
     }
@@ -230,7 +240,7 @@ body {
     main aside .aside-top nav ul li .icon {
       width: 25px;
       fill: var(--dark-gray);
-      margin-left: 15px;
+      margin-left: 12px;
     }
 
 
@@ -263,20 +273,54 @@ body {
     }
 
      /* /main aside  */
+     /* /main container  */
 
     main .container {
-      margin: 75px 0 0 0;
+      margin: 80px 0 0 0;
       width: calc(100% - 200px);
-      background-color: violet;
       flex-direction: column;
       gap: 20px;
       overflow-y: auto;
     }
 
+    main .container nav.music {
+      justify-content: center;
+      text-align: center;
+      flex-wrap: wrap;
+      padding-top: 10px;
+      text-transform: uppercase;
+      font-size: .8rem;
+      font-weight: 700;
+    }
+
+    main .container nav.music li {
+      display: inline-block;
+      padding: 5px;
+      position: relative;
+    }
+
+    main .container nav.music .active-nav {
+      width: 40px;
+      background-color: var(--green);
+      height: 2px;
+      position: absolute;
+      left: 25%;
+      top: 25px;
+    }
+
+    main .container .title,
+    .container .row {
+      padding-left: 10px;
+    }
+
+    main .container .title h2 {
+      padding: 20px 0 10px;
+    }
+
     .container .row {
       background-color:cadetblue;
       width: 100%;
-      gap: 2.2%;
+      gap: 2%;
       flex-wrap: wrap;
       justify-content: flex-start;
     }
@@ -287,6 +331,9 @@ body {
       width: calc(100vw / 8.5);
       height: calc(100vw / 6);
     }
+
+
+      /* /main container  */
 
 
     /* /main section */
@@ -347,21 +394,34 @@ body {
    /* XS devices */
 
    @media all and (max-width: 576px) {
+
+    .desktop {
+      display: none;
+    }
+
+    .active {
+      border-style: hidden;
+    }
+
+    
+  .b-piece {
+    border-bottom: 0px solid var(--dark-gray);
+  }
     
     main aside {
       width: 50px;
-      background-color: red;
+      margin: 0;
+      padding: 0;
     }
 
+  
     main header {
-      background-color: orange;
       width: calc(100% - 50px);
       left: 50px;
     }
 
     main .container {
       width: calc(100% - 50px);
-      background-color: violet;
     }
 
     .container .row .col {
