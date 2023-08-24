@@ -94,6 +94,9 @@ button {
     color: var(--dark-gray)
   }
 
+  .txt-center {
+    text-align: center;
+  }
 
   .bg-dark {
     background-color: var(--dark);
@@ -227,7 +230,8 @@ button {
 
     main aside .aside-top ul li a,
     main aside .aside-bottom span,
-    main .title p {
+    main .title p,
+    main .subtitle {
       font-size: .8rem;
       font-weight: 700;
     }
@@ -318,19 +322,65 @@ button {
     }
 
     .container .row {
-      background-color:cadetblue;
+      /* background-color:cadetblue; */
       width: 100%;
       gap: 2%;
       flex-wrap: wrap;
       justify-content: flex-start;
-    }
 
+    }
 
     .container .row .col {
-      background-color: chocolate;
+      /* background-color: chocolate; */
       width: calc(100vw / 8.5);
-      height: calc(100vw / 6);
+      /* height: calc(100vw / 6); */
     }
+
+        /* card  */
+
+    .container .row .col .card {
+      width: 100%;
+      height: 100%;
+    }
+
+    .container .row .col .image {
+      width: 100%;
+      position: relative;
+    }
+
+    .container .row .col .image img {
+      width: 100%;
+    }
+
+    .container .image:hover .overlay,
+    .container .image:hover .play {
+      display: block;
+    }
+
+    .image .overlay {
+      display: none;
+      background-color: rgba(255, 255, 255, 0.1);
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .image .play {
+      display: none;
+      font-size: 3.2rem;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+
+
+ 
+
+   
 
 
       /* /main container  */
@@ -367,9 +417,9 @@ button {
     }
 
     .container .row .col {
-      background-color: chocolate;
+      /* background-color: chocolate; */
       width: calc(100vw / 6);
-      height: calc(100vw / 4);
+      /* height: calc(100vw / 4); */
     }
 
    }
@@ -384,9 +434,9 @@ button {
     }
 
     .container .row .col {
-      background-color: chocolate;
+      /* background-color: chocolate; */
       width: calc(100vw / 3.4);
-      height: calc(100vw / 3);
+      /* height: calc(100vw / 3); */
     }
     
    }
@@ -404,7 +454,7 @@ button {
     }
 
     
-  .b-piece {
+   .b-piece {
     border-bottom: 0px solid var(--dark-gray);
   }
     
@@ -425,9 +475,9 @@ button {
     }
 
     .container .row .col {
-      background-color: chocolate;
+      /* background-color: chocolate; */
       width: calc(100vw / 2.8);
-      height: calc(100vw / 2);
+      /* height: calc(100vw / 2); */
     }
     
    }
