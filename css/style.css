@@ -129,6 +129,18 @@ button {
     border-bottom: 1px solid var(--dark-gray);
     width: 95%;
   }
+        /* common size */
+    main aside .aside-top ul li a,
+    main aside .aside-bottom span,
+    main .title p,
+    main .subtitle,
+    section.bottom-bar .right .name-artist,
+    section.bottom-bar .right .song-name,
+    section.bottom-bar .center .time {
+    font-size: .8rem;
+    font-weight: 700;
+  }
+      /* common size */
 
 
   /* /utilities */
@@ -169,6 +181,7 @@ button {
 
 
      /* main aside  */
+
    main aside {
      width: 225px;
      height: calc(100vh - 90px);
@@ -176,7 +189,7 @@ button {
      justify-content: space-between; 
      flex-direction: column;
     }
-
+        
     main aside .aside-top {
       height: calc(100% - 90px);
       min-height: 350px;
@@ -187,6 +200,66 @@ button {
       height: 200px;
       overflow-y: auto;
     }
+
+    main aside .aside-top nav.menu {
+      padding: 20px 0px;
+    }
+
+    main aside .aside-top nav.playlist {
+      padding: 15px 20px;
+      height: 80%;
+    }
+
+    main aside .aside-top nav.playlist .nav-voice {
+      font-size: .9rem;
+      font-weight: 700;
+    }
+  
+    main aside .aside-top .logo {
+      width: 170px;
+      padding: 15px;
+      cursor: pointer;
+    }
+
+    main aside .aside-top .logo.mobile {
+      display: none;
+    }
+
+
+    main aside .aside-top nav ul li a {
+      display: block;
+      border: 4px solid black;
+    }
+
+    main aside .aside-top nav ul li .icon {
+      width: 25px;
+      fill: var(--dark-gray);
+      margin-left: 12px;
+    }
+
+
+    main aside .aside-top nav ul li span {
+      padding: 5px;
+    }
+
+    main aside .aside-top nav.playlist {
+      height: 85%;
+    }
+
+
+    main aside .aside-top button {
+      border-style: none;
+      font-size: .9rem;
+      font-weight: 600;
+      cursor: pointer;
+      padding: 10px 0;
+    }
+
+    main aside .aside-top button i {
+      padding: 10px 12px;
+      font-size: 1.1rem;
+    }
+
 
     main aside .aside-bottom {
       height: 90px;
@@ -224,76 +297,7 @@ button {
     }
 
    
-
-    main aside .aside-top nav.menu {
-      padding: 20px 0px;
-    }
-
-    main aside .aside-top nav.playlist {
-      padding: 15px 20px;
-      height: 80%;
-    }
-
-    main aside .aside-top nav.playlist .nav-voice {
-      font-size: .9rem;
-      font-weight: 700;
-    }
-  
-    main aside .aside-top .logo {
-      width: 170px;
-      padding: 15px;
-      cursor: pointer;
-    }
-
-    main aside .aside-top .logo.mobile {
-      display: none;
-    }
-
-    main aside .aside-top ul li a,
-    main aside .aside-bottom span,
-    main .title p,
-    main .subtitle,
-    .bottom-bar .right .name-artist,
-    .bottom-bar .right .song-name,
-    .bottom-bar .center .time {
-      font-size: .8rem;
-      font-weight: 700;
-    }
-
-    main aside .aside-top nav ul li a {
-      display: block;
-      border: 4px solid black;
-    }
-
-    main aside .aside-top nav ul li .icon {
-      width: 25px;
-      fill: var(--dark-gray);
-      margin-left: 12px;
-    }
-
-
-    main aside .aside-top nav ul li span {
-      padding: 5px;
-    }
-
-    main aside .aside-top nav.playlist {
-      height: 85%;
-    }
-
-
-    main aside .aside-top button {
-      border-style: none;
-      font-size: .9rem;
-      font-weight: 600;
-      cursor: pointer;
-      padding: 10px 0;
-    }
-
-    main aside .aside-top button i {
-      padding: 10px 12px;
-      font-size: 1.1rem;
-    }
-
+   
      /* /main aside  */
      /* /main container  */
 
@@ -365,6 +369,7 @@ button {
 
     .container .row .col .card .image {
       position: relative;
+      cursor: pointer;
     }
 
     .container .row .col .card .image img {
