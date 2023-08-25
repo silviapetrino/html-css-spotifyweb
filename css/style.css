@@ -465,6 +465,12 @@ button {
       font-size: 1.9rem;
     }
 
+    .bottom-bar .center .range-song {
+      margin-bottom: 10px;
+      width: 100%;
+      justify-content: center;
+    }
+
 
   
 
