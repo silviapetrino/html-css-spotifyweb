@@ -182,7 +182,6 @@ button {
       min-height: 350px;
      }
 
-
      main aside .aside-top .playlist .playlist-list {
       line-height: 20px;
       height: 200px;
@@ -402,12 +401,11 @@ button {
 
         /* card-image overlay  */
 
-
-
       /* /main container  */
 
 
     /* //main section */
+
 
       /* bottom bar  */
     
@@ -478,8 +476,13 @@ button {
       max-width: 100%;
     }
 
+
     .bottom-bar .center .player-buttons i.play {
       font-size: 1.9rem;
+    }
+
+    .bottom-bar .center .player-buttons i.play:hover {
+      transform: scale(1.2);
     }
 
     .bottom-bar .center .range-song {
