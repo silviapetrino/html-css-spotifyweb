@@ -232,6 +232,10 @@ button {
       cursor: pointer;
     }
 
+    main aside .aside-top .logo.mobile {
+      display: none;
+    }
+
     main aside .aside-top ul li a,
     main aside .aside-bottom span,
     main .title p,
@@ -481,6 +485,14 @@ button {
       width: 50px;
       margin: 0;
       padding: 0;
+    }
+
+    main aside .aside-top .logo.mobile {
+      display: block;
+    }
+
+    main aside .aside-top .logo.mobile img {
+      width: 20%;
     }
 
   
