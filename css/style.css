@@ -10,6 +10,9 @@
   padding: 0;
 }
 
+body {
+  background-color: var(--black);
+}
 
 body,
 button {
@@ -23,6 +26,7 @@ button {
   --black: #141922;
   --dark: #000000; 
   --topbar-black: #080B12;
+  --bottombar-black: #282828;
   --white: #FFFFFF;
   --dark-gray: #717171;
   --gray: #A3A3A3;
@@ -32,7 +36,7 @@ button {
 
   /* utilities */
   .debug {
-    border: 1px solid rgb(250, 250, 250);
+    border: 1px solid rgb(255, 255, 255);
   }
 
   .d-flex {
@@ -72,13 +76,10 @@ button {
     list-style: none;
   }
 
-  .icon:hover {
-   fill: var(--white);
-  }
   
-
-  li:hover .icon {
+  li:hover svg.icon {
     fill: var(--white);
+    color: var(--white)
   }
 
   li:hover a,
@@ -131,21 +132,19 @@ button {
   /* main section */
 
   main {
-    /* background-color: yellow; */
     height: calc(100vh - 90px);
     position: relative;
   }
 
   main header {
-    width: calc(100% - 200px);
+    width: calc(100% - 220px);
     min-height: 80px;
     position: fixed;
     top: 0;
     right: 0;
     justify-content: flex-end;
     align-items: center;
-    background-color: var(--topbar-black);
-    opacity: .9;
+    background-color: rgba(0,0,0,0.2);
   }
 
   main header button.upgrade {
@@ -239,7 +238,9 @@ button {
     main aside .aside-top ul li a,
     main aside .aside-bottom span,
     main .title p,
-    main .subtitle {
+    main .subtitle,
+    .bottom-bar .right .name-artist,
+    .bottom-bar .right .song-name {
       font-size: .8rem;
       font-weight: 700;
     }
@@ -311,7 +312,7 @@ button {
       position: relative;
     }
 
-    main .container nav.music .active-nav {
+    .active-nav {
       width: 40px;
       background-color: var(--green);
       height: 2px;
@@ -330,7 +331,6 @@ button {
     }
 
     .container .row {
-      /* background-color:cadetblue; */
       width: 100%;
       gap: 2%;
       flex-wrap: wrap;
@@ -339,16 +339,13 @@ button {
     }
 
     .container .row .col {
-      /* background-color: chocolate; */
       width: calc(100vw / 8.4);
-      /* height: calc(100vw / 6); */
     }
 
         /* card  */
 
     .container .row .col .card {
       width: 100%;
-      /* height: 100%; */
     }
 
     .container .row .col .card h4 {
@@ -393,7 +390,6 @@ button {
 
 
 
-  
       /* /main container  */
 
 
@@ -402,11 +398,58 @@ button {
     /* bottom bar  */
     
     .bottom-bar {
-      background-color: aqua;
+      background-color: var(--bottombar-black);
       height: 90px;
-      width: 100%;
+      width: 100vw;
       position: fixed;
+      justify-content: space-between;
+      align-items: center;
     }
+
+    .bottom-bar .center,
+    .bottom-bar .left,
+    .bottom-bar .right {
+      align-items: center;
+      height: 100%;
+    }
+
+
+    .bottom-bar .center {
+      width: 40%;
+      justify-content: center;
+    }
+
+    .bottom-bar .right {
+      justify-content: flex-start;
+    }
+
+
+    .bottom-bar .right .song {
+      align-items: center;
+    }
+
+    .bottom-bar .right .song img {
+      width: 50px;
+      padding: 10px 5px;
+      margin-left: 4px;
+      display: inlin-block;
+    }
+
+    .bottom-bar .right .small-icons {
+      padding-left: 10px;
+    }
+
+    .bottom-bar .right .small-icons i {
+      padding: 0 5px;
+    }
+
+  
+
+  
+
+  
+
+
 
     /* /bottom bar  */
 
@@ -429,9 +472,8 @@ button {
     }
 
     .container .row .col {
-      /* background-color: chocolate; */
       width: calc(100vw / 6);
-      /* height: calc(100vw / 4); */
+  
     }
 
    }
@@ -447,9 +489,7 @@ button {
     }
 
     .container .row .col {
-      /* background-color: chocolate; */
       width: calc(100vw / 3.4);
-      /* height: calc(100vw / 3); */
     }
     
    }
