@@ -524,9 +524,11 @@ button {
       align-items: center;
     }
 
-    
-    .bottom-bar .left .tool.range {
+    .bottom-bar .left .tool {
       font-size: .9rem;
+    }
+
+    .bottom-bar .left .tool.range {
       position: relative;
     }
       /* /bottom-bar left  side*/
