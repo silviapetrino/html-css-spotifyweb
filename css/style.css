@@ -395,7 +395,7 @@ button {
 
 
 
-      /* /main container  */
+       /* /main container  */
 
 
     /* /main section */
@@ -418,8 +418,8 @@ button {
       height: 100%;
     }
 
+       /* bottom-bar right  */
 
-  
     .bottom-bar .right .song {
       align-items: center;
     }
@@ -440,15 +440,18 @@ button {
       padding-left: 10px;
     }
 
-    .bottom-bar .right .small-icons i {
+    .bottom-bar .right .small-icons i,
+    .bottom-bar .left .tool {
       padding: 0 5px;
       cursor: pointer;
     }
 
+     /* /bottom-bar right  */
+     /* bottom-bar center  */
+
     .bottom-bar .center {
       width: 40%;
       justify-content: center;
-  
     }
 
     .bottom-bar .center .player-buttons {
@@ -490,52 +493,70 @@ button {
       position: relative;
     }
 
-    .bottom-bar .center .range-song .bar .overlay {
-      display: none;
-      background-color: var(--green);
-      width: 40%;
+     /* /bottom-bar center  */
+      /* bottom-bar left  */
+
+
+    .bottom-bar .left .range {
+      background-color: var(--dark-gray);
+      border-radius: 5px;
+      width: 70px;
+      max-width: 100%;
       height: 5px;
-      position: absolute;
-      top: 0;
-      left: 0;
     }
 
-    .bottom-bar .center .range-song .overlay:after {
-      content: "";
-      border-radius: 50%;
-      width: 15px;
-      height: 15px;
-      background-color: #ffffff;
-      position: absolute;
-      left: calc(100% - 10px);
-      top: -5px; 
+    .bottom-bar .left .tools {
+      margin-right: 15px;
+      justify-content: center;
+      align-items: center;
     }
+
     
-
-    .bottom-bar .center .bar:hover .overlay {
-      display: block;
+    .bottom-bar .left .tool.range {
+      font-size: .9rem;
+      position: relative;
     }
+      /* /bottom-bar left  */
 
-   
+       /* /bottom-bar range-overlay  */
 
+      .bottom-bar .overlay {
+        display: none;
+        background-color: var(--green);
+        height: 5px;
+        width: 40%;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+  
+      .bottom-bar .center .bar:hover .overlay,
+      .bottom-bar .left .tool.range:hover .overlay {
+        display: block;
+      }
+  
+  
+      .bottom-bar .center .range-song .overlay:after,
+      .bottom-bar .left .tool.range .overlay:after {
+        content: "";
+        border-radius: 50%;
+        width: 15px;
+        height: 15px;
+        background-color: #ffffff;
+        position: absolute;
+        left: calc(100% - 10px);
+        top: -5px; 
+      }
 
+      /* /bottom-bar range-overlay  */
 
   
-
-  
-
-  
-
-
-
     /* /bottom bar  */
 
 
 
 
-
-
-   /*MEDIA-QUERIES*/
+       /* ******MEDIA-QUERIES****** */
 
 
 
