@@ -51,6 +51,10 @@ button {
     display: inline-block;
   }
 
+  .rounded {
+    border-radius: 50%;
+  }
+
   .active {
     border-left: 3px solid var(--green);
     color: var(--white);
@@ -345,14 +349,15 @@ button {
 
     .container .row .col .card h4 {
       line-height: 17px;
+      padding: 4px 0;
     }
 
-    .container .row .col .image {
-      width: 100%;
+
+    .container .row .col .card .image {
       position: relative;
     }
 
-    .container .row .col .image img {
+    .container .row .col .card .image img {
       width: 100%;
       height: 100%;
       object-fit: cover;
@@ -463,10 +468,14 @@ button {
   }
 
    
-  .container .row {
-    gap: 3%;
-    padding: 10px 10px;
-  }
+    main .container .row {
+      gap: 3%;
+      padding: 10px 10px;
+    }
+
+    main .container .title h2 {
+      padding: 30px 0;
+    }
     
     main aside {
       width: 50px;
@@ -485,9 +494,7 @@ button {
     }
 
     .container .row .col {
-      /* background-color: chocolate; */
       width: calc(100vw / 2.8);
-      /* height: calc(100vw / 2); */
     }
     
    }
