@@ -138,6 +138,7 @@ button {
   main {
     height: calc(100vh - 90px);
     position: relative;
+    overflow: hidden;
   }
 
   main header {
@@ -172,10 +173,29 @@ button {
      width: 225px;
      height: calc(100vh - 90px);
      min-height: 800;
-    justify-content: space-between; 
-    flex-direction: column;
-      
+     justify-content: space-between; 
+     flex-direction: column;
     }
+
+    main aside .aside-top {
+      height: calc(100% - 90px);
+      min-height: 350px;
+     }
+
+     main aside .aside-top .playlist {
+      max-height: 200px;
+     }
+
+
+     main aside .aside-top .playlist .playlist-list {
+      line-height: 20px;
+      overflow: auto;
+    }
+
+    main aside .aside-bottom {
+      height: 90px;
+    }
+
 
     main aside span {
       vertical-align: middle;
@@ -186,9 +206,7 @@ button {
       cursor: pointer;
     }
     
-    main aside .aside-bottom {
-      min-height: 100px;
-    }
+  
 
     main aside .aside-bottom .download {
       padding: 3px 10px;
@@ -211,9 +229,7 @@ button {
       margin-right: 2px;
     }
 
-    main aside .aside-top {
-     height: calc(100% - 100px);
-    }
+   
 
     main aside .aside-top nav.menu {
       padding: 20px 0px;
@@ -268,12 +284,6 @@ button {
 
     main aside .aside-top nav.playlist {
       height: 85%;
-    }
-
-
-    main aside .aside-top nav.playlist ul {
-      line-height: 20px;
-      overflow-y: auto;
     }
 
 
@@ -368,6 +378,7 @@ button {
       height: 100%;
       object-fit: cover;
     }
+        /* card-image overlay  */
 
     .container .image:hover .overlay,
     .container .image:hover .play {
@@ -391,16 +402,18 @@ button {
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
-    }
+    }  
+
+        /* card-image overlay  */
 
 
 
-       /* /main container  */
+      /* /main container  */
 
 
-    /* /main section */
+    /* //main section */
 
-    /* bottom bar  */
+      /* bottom bar  */
     
     .bottom-bar {
       background-color: var(--bottombar-black);
@@ -418,7 +431,7 @@ button {
       height: 100%;
     }
 
-       /* bottom-bar right  */
+        /* bottom-bar right side  */
 
     .bottom-bar .right .song {
       align-items: center;
@@ -446,8 +459,8 @@ button {
       cursor: pointer;
     }
 
-     /* /bottom-bar right  */
-     /* bottom-bar center  */
+     /* /bottom-bar right side */
+     /* bottom-bar center side */
 
     .bottom-bar .center {
       width: 40%;
@@ -493,8 +506,8 @@ button {
       position: relative;
     }
 
-     /* /bottom-bar center  */
-      /* bottom-bar left  */
+     /* /bottom-bar center side */
+      /* bottom-bar left  side*/
 
 
     .bottom-bar .left .range {
@@ -516,9 +529,9 @@ button {
       font-size: .9rem;
       position: relative;
     }
-      /* /bottom-bar left  */
+      /* /bottom-bar left  side*/
 
-       /* /bottom-bar range-overlay  */
+       /* /bottom-bar range's overlay  */
 
       .bottom-bar .overlay {
         display: none;
@@ -605,9 +618,9 @@ button {
     }
 
     
-   .b-piece {
-    border-bottom: 0px solid var(--dark-gray);
-  }
+    .b-piece {
+      border-bottom: 0px solid var(--dark-gray);
+    }
 
    
     main .container .row {
