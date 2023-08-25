@@ -223,8 +223,9 @@
         <div class="col txt-center">
           <div class="card">
             <div class="image">
+
               <img class="rounded" src="./img/youg.jpeg" alt="album">
-              <div class="overlay"></div>
+              <div class="overlay rounded"></div>
               <i class="white-txt play fa-regular fa-circle-play"></i>
             </div>
           <h4 class="white-txt">Lana del Rey</h4>
@@ -234,7 +235,7 @@
           <div class="card">
             <div class="image">
               <img class="rounded" src="./img/einaudi.jpeg" alt="album">
-              <div class="overlay"></div>
+              <div class="overlay rounded"></div>
               <i class="white-txt play fa-regular fa-circle-play"></i>
             </div>
           <h4 class="white-txt">Stefano Corradi</h4>
@@ -272,11 +273,19 @@
       <div class="player-buttons d-flex flex-row ">
         <i class="fa-solid fa-shuffle"></i>
         <i class="fa-solid fa-backward-step"></i>
-        <i class=" play fa-regular fa-circle-play"></i>
+        <i class="play fa-regular fa-circle-play"></i>
         <i class="fa-solid fa-forward-step"></i>
         <i class="fa-solid fa-arrow-rotate-right"></i>
       </div>
-      <div class="range-song debug">range-song</div>
+      <div class="range-song d-flex">
+        <div class="bar d-flex">
+          <span class="time white-txt d-in-block">0:25</span>
+          <span class="range d-in-block darkgray-txt debug">
+            <div class="overlay d-flex"></div>
+          </span>
+          <span class="time white-txt d-in-block">4:35</span>
+        </div>
+      </div>
 
     </div>
 

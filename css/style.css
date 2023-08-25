@@ -244,7 +244,8 @@ button {
     main .title p,
     main .subtitle,
     .bottom-bar .right .name-artist,
-    .bottom-bar .right .song-name {
+    .bottom-bar .right .song-name,
+    .bottom-bar .center .time {
       font-size: .8rem;
       font-weight: 700;
     }
@@ -431,6 +432,10 @@ button {
       cursor: pointer;
     }
 
+    .bottom-bar .right .song-name:hover {
+      border-bottom: 1px solid var(--dark-gray)
+    }
+
     .bottom-bar .right .small-icons {
       padding-left: 10px;
     }
@@ -466,10 +471,53 @@ button {
     }
 
     .bottom-bar .center .range-song {
-      margin-bottom: 10px;
       width: 100%;
       justify-content: center;
+      margin-bottom: 20px;
     }
+
+    .bottom-bar .center .range-song .bar {
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+
+    .bottom-bar .center .range-song .range {
+      width: 70%;
+      height: 5px;
+      background-color: var(--dark-gray);
+      border-radius: 5px;
+      position: relative;
+    }
+
+    .bottom-bar .center .range-song .bar .overlay {
+      display: none;
+      background-color: var(--green);
+      width: 40%;
+      height: 5px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .bottom-bar .center .range-song .overlay:after {
+      content: "";
+      border-radius: 50%;
+      width: 15px;
+      height: 15px;
+      background-color: #ffffff;
+      position: absolute;
+      left: calc(100% - 10px);
+      top: -5px; 
+    }
+    
+
+    .bottom-bar .center .bar:hover .overlay {
+      display: block;
+    }
+
+   
+
 
 
   
