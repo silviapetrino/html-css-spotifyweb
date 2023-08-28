@@ -19,8 +19,6 @@ button {
   font-family: 'Montserrat', sans-serif;
 }
 
-
-
  /* --colours palette-- */
  :root {
   --black: #141922;
@@ -142,7 +140,6 @@ button {
   }
       /* common size */
 
-
   /* /utilities */
 
   /* main section */
@@ -178,7 +175,6 @@ button {
   main button.upgrade:hover {
     transform: scale(1.1);
   }
-
 
      /* main aside  */
 
@@ -225,7 +221,6 @@ button {
       display: none;
     }
 
-
     main aside .aside-top nav ul li a {
       display: block;
       border: 4px solid black;
@@ -237,7 +232,6 @@ button {
       margin-left: 12px;
     }
 
-
     main aside .aside-top nav ul li span {
       padding: 5px;
     }
@@ -245,7 +239,6 @@ button {
     main aside .aside-top nav.playlist {
       height: 85%;
     }
-
 
     main aside .aside-top button {
       border-style: none;
@@ -274,7 +267,6 @@ button {
       cursor: pointer;
     }
     
-
     main aside .aside-bottom .download {
       padding: 3px 10px;
       cursor: pointer;
@@ -296,8 +288,6 @@ button {
       margin-right: 2px;
     }
 
-   
-   
      /* /main aside  */
      /* /main container  */
 
@@ -406,9 +396,7 @@ button {
 
       /* /main container  */
 
-
     /* //main section */
-
 
       /* bottom bar  */
     
@@ -479,7 +467,6 @@ button {
       max-width: 100%;
     }
 
-
     .bottom-bar .center .player-buttons i.play {
       font-size: 1.9rem;
     }
@@ -510,7 +497,6 @@ button {
 
      /* /bottom-bar center side */
       /* bottom-bar left  side*/
-
 
     .bottom-bar .left .range {
       background-color: var(--dark-gray);
@@ -552,7 +538,6 @@ button {
         display: block;
       }
   
-  
       .bottom-bar .center .range-song .overlay:after,
       .bottom-bar .left .tool.range .overlay:after {
         content: "";
@@ -566,16 +551,10 @@ button {
       }
 
       /* /bottom-bar range-overlay  */
-
   
     /* /bottom bar  */
 
-
-
-
        /* ******MEDIA-QUERIES****** */
-
-
 
   /* MD devices */
 
@@ -590,8 +569,6 @@ button {
       width: calc(100% / 5);
       margin-left: 25px;
     }
-
-
    }
 
    /* S devices */
@@ -607,7 +584,6 @@ button {
     .container .row .col {
       width: calc(100% / 3);
     }
-    
    }
  
    /* XS devices */
@@ -625,8 +601,7 @@ button {
     .b-piece {
       border-bottom: 0px solid var(--dark-gray);
     }
-
-   
+  
          /* main section*/
     main aside {
       width: 50px;
@@ -642,7 +617,6 @@ button {
       width: 20%;
     }
 
-  
     main header {
       width: calc(100% - 50px);
       left: 50px;
@@ -670,7 +644,6 @@ button {
     .bottom-bar .left .tools {
       padding-right: 5px;
     }
-    
    }
 
 
