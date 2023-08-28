@@ -19,6 +19,25 @@ button {
   font-family: 'Montserrat', sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+
+li:hover svg.icon {
+  fill: var(--white);
+  color: var(--white)
+}
+
+li:hover a,
+li:hover button {
+  color: var(--white);
+}
+
  /* --colours palette-- */
  :root {
   --black: #141922;
@@ -70,24 +89,6 @@ button {
     color: var(--white);
   }
 
-  a {
-    text-decoration: none;
-  }
-
-  li {
-    list-style: none;
-  }
-
-  
-  li:hover svg.icon {
-    fill: var(--white);
-    color: var(--white)
-  }
-
-  li:hover a,
-  li:hover button {
-    color: var(--white);
-  }
 
   .white-txt {
     color: var(--white);
@@ -252,7 +253,6 @@ button {
       padding: 10px 12px;
       font-size: 1.1rem;
     }
-
 
     main aside .aside-bottom {
       height: 90px;
