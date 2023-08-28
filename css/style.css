@@ -346,7 +346,6 @@ button {
     .container .row {
       width: 100%;
       flex-wrap: wrap;
-      /* justify-content: flex-start; */
 
     }
 
@@ -659,7 +658,7 @@ button {
     }
 
     main .container .row .col {
-      width: calc(100vw / 2.8);
+      width: calc(100% / 2.9);
     }
 
     main .container .title h2 {
